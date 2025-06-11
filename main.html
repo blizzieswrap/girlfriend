@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body class="body">
+    <img src="images/anya-forger-jumpscare.gif" alt="Dancing GIF">
+    <div class="question">Do you love me?</div>
+    <div class="buttons">
+      <button class="yes" id="yesBtn" onclick="answerYes()">Yes</button>
+      <button class="no" id="noBtn" onclick="answerNo()">No</button>
+    </div>
+    <audio id="loveSong" src="sounds/ilove.mp3" loop></audio>
+    <audio id="shocksound" src="sounds/gong.mp3"></audio>
+    <audio id="blink" src="sounds/blink.mp3"></audio>
+    <audio id="cry" src="sounds/crying.mp3"></audio>
+    <audio id="scary" src="sounds/scary.mp3"></audio>
+    <audio id="laugh" src="sounds/laugh.mp3"></audio>
+    <div id="celebration-container"></div>
+    <i id="volumeOn" class="fa-solid fa-volume-high"></i>
+    <i id="volumeOff" class="fa-solid fa-volume-xmark" style="display: none;"></i>
+    <i id="refreshBtn" class="fa-solid fa-arrows-rotate"></i>
+  </body>
+</html>

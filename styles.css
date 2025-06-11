@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdf6f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transform-origin: center center;
+}
+
+.yes {
+    background-color: #3f8f29;
+    color: white;
+}
+
+.no {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.8)
+}
+
+#celebration-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.celebration-item {
+    position: absolute;
+    font-size: 24px;
+    animation: floatUp 3s ease-out forwards;
+    opacity: 0.8;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-20vh) scale(1.5);
+        opacity: 0;
+    }
+}
+
+#volumeOn, #volumeOff {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    color: #000000;
+}
+
+#volumeOn:hover, #volumeOff:hover {
+    color: #000000;
+    transform: scale(1.1);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#volumeOn:active, #volumeOff:active {
+    color: #000000;
+    transform: scale(0.8);
+}
+
+#refreshBtn {
+    position: fixed;
+    top: 20px;
+    left: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000;
+    color: #000000;
+    transition: transform 0.2s ease, color 0.2s ease;
+    margin-left: 10px;
+}
+
+#refreshBtn:hover {
+    color: #000000; /* Light blue on hover */
+    transform: rotate(90deg) scale(1.2);
+}
