@@ -50,6 +50,11 @@ function answerYes() {
   startCelebration();
   
   const loveSong = document.getElementById("loveSong");
+  shocksound.pause();
+  blink.pause();
+  cry.pause();
+  scary.pause();
+  laugh.pause();
   loveSong.play();
 }
 
